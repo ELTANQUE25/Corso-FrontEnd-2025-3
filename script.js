@@ -217,3 +217,49 @@ auto.descrivi = function() {
     console.log("Questa auto è una " + this.marca + " " + this.modello + " del " + this.anno);
 }
 
+//INTERAZIONE CON L’UTENTE
+//1. Chiedi con prompt() il nome dell’utente e salutalo con alert() .
+function salutaEQuadrato() {
+let nomeUtente = prompt("Come ti chiami?");
+alert("Ciao " + nomeUtente + "!");
+
+//2. Chiedi all’utente un numero e mostra in alert() il suo quadrato.
+let numeroUtente = prompt("Inserisci un numero:");
+let quadratoNumero = numeroUtente * numeroUtente;
+alert("Il quadrato di " + numeroUtente + " è " + quadratoNumero);
+
+}
+//MINI-PROGETTINI FLASH
+//Fai inserire due numeri all’utente con prompt() e mostra la loro somma con alert() .
+function sommaDueNumeri() {
+let numeriSomma= prompt("Inserisci due numeri");
+alert("La somma è: " + numeriSomma);
+}
+
+//2. Crea un array di tre nomi e fai un ciclo che li saluta tutti.
+function salutaNomi() {
+let nomi = ["Maria", "Antonio", "Marco"];
+for (let i = 0; i < nomi.length; i++) {
+    alert("Ciao " + nomi[i] + "!");
+}               
+
+//3. Crea un oggetto studente e stampa in alert: "Mario ha preso 28" .
+let studente = {
+    nome: "Mario",
+    voto: 28
+};
+alert(studente.nome + " ha preso " + studente.voto);
+}
+
+//4. Scrivi una funzione che, data una parola, restituisce la parola in maiuscolo.
+function inMaiuscolo(parola) {
+    return parola.toUpperCase();
+}
+let parolaMaiuscola = inMaiuscolo("ciao");
+console.log(parolaMaiuscola); // "CIAO"   
+
+
+//5. Stampa tutti i quadrati dei numeri da 1 a 10.
+for (let i = 1; i <= 10; i++) {
+    console.log("Il quadrato di " + i + " è " + (i * i));
+}               
