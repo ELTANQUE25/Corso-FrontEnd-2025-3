@@ -201,3 +201,19 @@ for (let i = 0; i < frutti.length; i++) {
 console.log(frutti.length);
 
 //OGGETTI
+// 1. Crea un oggetto auto con proprietà marca , modello , anno .
+let auto = {
+    marca: "Mercedes",
+    modello: "Class A",
+    anno: 2013
+};
+console.log(auto);
+
+//2. Stampa in console solo marca e anno .
+console.log (auto.marca, auto.anno);
+
+//3. Aggiungi un metodo descrivi() che stampa "Questa auto è una Fiat Panda del 2005" .
+auto.descrivi = function() {
+    console.log("Questa auto è una " + this.marca + " " + this.modello + " del " + this.anno);
+}
+
