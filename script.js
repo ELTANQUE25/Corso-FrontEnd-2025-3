@@ -184,3 +184,20 @@ presentati("Mariangela", 29);
 let frutti = ["mela", "banana", "pera"];
 console.log(frutti[0]); // mela
 
+//2. Aggiungi "kiwi" alla fine dell’array e stampalo.
+frutti.push("kiwi");
+console.log(frutti);
+
+//3. Rimuovi l’ultimo elemento con .pop() e stampalo.
+let ultimoFrutto = frutti.pop();
+console.log(ultimoFrutto);
+
+//4. Stampa tutti gli elementi con un ciclo for .
+for (let i = 0; i < frutti.length; i++) {
+    console.log(frutti[i]);
+}
+
+// 5. Stampa la lunghezza dell’array.
+console.log(frutti.length);
+
+//OGGETTI
