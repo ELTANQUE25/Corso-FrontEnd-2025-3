@@ -151,3 +151,36 @@ function moltiplica(a, b) {
 }
 let risultato2 = moltiplica(2,3);
 console.log ("Risultato: "+ risultato2);
+
+//4. Scrivi una funzione isPari(numero) che restituisce true se il numero è pari.
+function isPari (numero) {
+if (numero % 2 ==0)
+return true;
+else {
+    return false;
+}
+}
+let risultato3 = isPari(4);
+console.log(risultato3);
+
+//5. Crea una funzione quadrato(numero) che restituisce il quadrato del numero.
+function quadrato(numero) {
+return numero*numero;
+}
+
+let risultato4 = quadrato(5);
+console.log(risultato4);
+
+//6. Scrivi una funzione presentati(nome, eta) che stampa:
+function presentati(nome, eta) {
+console.log ("Ciao, mi chiamo " + nome + " e ho " + eta + " anni");
+}
+
+presentati("Mariangela", 29);
+
+//ARRAY
+//1. Crea un array frutti = ["mela", "banana", "pera"] e stampane il primo elemento.
+
+let frutti = ["mela", "banana", "pera"];
+console.log(frutti[0]); // mela
+
