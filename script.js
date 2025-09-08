@@ -218,30 +218,32 @@ auto.descrivi = function() {
 }
 
 //INTERAZIONE CON L’UTENTE
-//1. Chiedi con prompt() il nome dell’utente e salutalo con alert() .
-function salutaEQuadrato() {
-let nomeUtente = prompt("Come ti chiami?");
-alert("Ciao " + nomeUtente + "!");
+//1. Chiedi con prompt() il nome dell’utente e salutalo con alert().
+function saluta {
+    let nome = document.getElementById("nome").value;
+    alert("Ciao " + nome + "!");
+}
+
 
 //2. Chiedi all’utente un numero e mostra in alert() il suo quadrato.
-let numeroUtente = prompt("Inserisci un numero:");
-let quadratoNumero = numeroUtente * numeroUtente;
-alert("Il quadrato di " + numeroUtente + " è " + quadratoNumero);
-
+function mostraQuadrato() {
+    let numero = document.getElementById("Inserisci un numero:").value;
+    let quadrato = numero * numero;
+    alert("Il quadrato di " + numero + " è " + quadrato);
 }
 //MINI-PROGETTINI FLASH
 //Fai inserire due numeri all’utente con prompt() e mostra la loro somma con alert() .
-function sommaDueNumeri() {
-let numeriSomma= prompt("Inserisci due numeri");
-alert("La somma è: " + numeriSomma);
-}
+let numero1 = prompt("Inserisci il primo numero:");
+let numero2 = prompt("Inserisci il secondo numero:");
+let somma = Number(numero1) + Number(numero2);
+alert("La somma dei due numeri è: " + somma);
 
 //2. Crea un array di tre nomi e fai un ciclo che li saluta tutti.
-function salutaNomi() {
 let nomi = ["Maria", "Antonio", "Marco"];
 for (let i = 0; i < nomi.length; i++) {
     alert("Ciao " + nomi[i] + "!");
-}               
+}
+
 
 //3. Crea un oggetto studente e stampa in alert: "Mario ha preso 28" .
 let studente = {
@@ -249,7 +251,6 @@ let studente = {
     voto: 28
 };
 alert(studente.nome + " ha preso " + studente.voto);
-}
 
 //4. Scrivi una funzione che, data una parola, restituisce la parola in maiuscolo.
 function inMaiuscolo(parola) {
