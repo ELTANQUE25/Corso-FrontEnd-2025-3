@@ -64,7 +64,7 @@ console.log(punti); // 60
 
 //4. Confronta e prendi visione:
 console.log(5 == "5"); // true
-console.log(5 === "5"); // false
+console.log(5 === "5"); // false confronta anche il tipo
 console.log(5 != 7);  // true  
 console.log(8 !== "8"); // true
 
@@ -100,3 +100,54 @@ if (ora < 15) {
 } else {
     console.log("Buonasera");
 }
+
+//CICLI
+//1. Stampa i numeri da 1 a 20 con un ciclo for .
+for (let i = 1; i <= 20; i++) {
+    console.log(i);
+}
+
+//2. Stampa i numeri pari da 2 a 20.
+for (let i = 2; i <= 20; i += 2) {
+    console.log(i);
+}
+
+//3. Con un ciclo while stampa i numeri da 10 a 1 (conto alla rovescia).
+let count = 10;
+while (count >= 1) {
+    console.log(count);
+    count--;
+}
+
+//Con un ciclo for stampa la tabellina del 5 (da 5x1 a 5x10 ).
+for (let i = 1; i <= 10; i++) {
+    console.log("5 x " + i + " = " + (5 * i)); //In ogni iterazione, viene eseguita la moltiplicazione di 5 per il valore di i
+}
+
+//5. Somma i numeri da 1 a 100 con un ciclo for .
+let somma= 0;
+for (let i = 1; i <= 100; i++) {
+    somma += i; // Aggiungi il valore di i alla variabile somma
+}   
+console.log(somma);
+
+//FUNZIONI
+//1. Scrivi una funzione saluta() che stampa "Ciao!" .
+function saluta(nome) {
+    console.log("Ciao " + nome + "!");
+} 
+saluta("Mariangela");
+
+//2. Scrivi una funzione somma(a, b) che restituisce la somma.
+function somma(a, b) {
+    return a + b;
+}
+let risultato1 = somma(5, 7);
+console.log(risultato1); 
+
+//3. Scrivi una funzione moltiplica(a, b) che restituisce il prodotto.
+function moltiplica(a, b) {
+	return a*b;
+}
+let risultato2 = moltiplica(2,3);
+console.log ("Risultato: "+ risultato2);
